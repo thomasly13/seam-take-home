@@ -38,14 +38,14 @@ rails s
 ## API Endpoints
 
 ### `posts`
-+ `GET /api/posts` - returns all blog posts
-+ `GET /api/posts/{id}` - returns ID specific blog post
-+ `POST /api/posts` - create a blog post
-+ `PUT /api/posts/{id}` - update an existing blog post by its ID
-+ `DELETE /api/posts/{id}` - delete a blog post by its ID
++ `GET /posts` - returns all blog posts
++ `GET /posts/{id}` - returns ID specific blog post
++ `POST /posts` - create a blog post
++ `PUT /posts/{id}` - update an existing blog post by its ID
++ `DELETE /posts/{id}` - delete a blog post by its ID
 
 ### `comments`
-+ `GET /api/posts/{postId}/comments` - returns all comments for a ID specific blog post
-+ `POST /api/posts/{postId}/comments` - create a new comment for a ID specific blog post
++ `GET /posts/{postId}/comments` - returns all comments for a ID specific blog post
++ `POST /posts/{postId}/comments` - create a new comment for a ID specific blog post
 
 
