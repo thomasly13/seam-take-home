@@ -28,6 +28,12 @@ sudo service postgresql start
 rails db:migrate 
 ```
 
+##### 4. Seed Database
+
+```bash
+rails db:seed
+```
+
 ##### 4. Start the rails server
 
 ```bash
@@ -36,6 +42,12 @@ rails s
 
  
 ## API Endpoints
+
+Currently on localhost:5000
+
+## Example
+
+`GET` localhost:5000/posts
 
 ### `posts`
 + `GET /posts` - returns all blog posts
