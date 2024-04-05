@@ -10,5 +10,9 @@
 #  updated_at :datetime         not null
 #
 class Comment < ApplicationRecord
-   validates :author, :content, :post_id, presence: true 
+    validates :author, :content, :post_id, presence: true 
+
+    belongs_to :post,
+    foreign_key: :post_id,
+    class_name: :Post 
 end

@@ -1,5 +1,5 @@
-class Api::PostsController < ApplicationController
-
+class PostsController < ApplicationController
+    
     # Returns all post in an array
     def index
         @posts = Post.all 

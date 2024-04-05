@@ -11,4 +11,10 @@
 #
 class Post < ApplicationRecord
     validates :title, :author, :content, presence: true
+
+    has_many :comments,
+    foreign_key: :post_id,
+    class_name: :Comment,
+    dependent: :destroy
+    
 end
